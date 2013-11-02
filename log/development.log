@@ -1,0 +1,788 @@
+  [1m[36m (138.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (100.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMacs (20130926211912)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMacs (20130926211912)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMacs (20130926211912)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "macs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "model" varchar(255), "processor" float, "memory" integer, "storage" integer, "video" varchar(255), "price" float, "index" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130926211912"]]
+  [1m[36m (145.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (52.4ms)[0m  [1mINSERT INTO "macs" ("created_at", "index", "memory", "model", "price", "processor", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 25 Oct 2013 16:36:49 UTC +00:00], ["index", 1], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 16:36:49 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[35m (126.4ms)[0m  commit transaction
+  [1m[36mMac Load (0.1ms)[0m  [1mSELECT "macs".* FROM "macs"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "macs"
+  [1m[36m (130.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (108.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMacs (20130926211912)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "macs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "model" varchar(255), "processor" float, "memory" integer, "storage" integer, "video" varchar(255), "price" float, "index" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130926211912"]]
+  [1m[36m (117.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "macs" ("created_at", "index", "memory", "model", "price", "processor", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 25 Oct 2013 16:40:48 UTC +00:00], ["index", 1], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 16:40:48 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[35m (210.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "macs" ("created_at", "index", "memory", "model", "price", "processor", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 25 Oct 2013 16:40:48 UTC +00:00], ["index", 2], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 16:40:48 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[36m (113.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "macs" ("created_at", "index", "memory", "model", "price", "processor", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 25 Oct 2013 16:40:48 UTC +00:00], ["index", 3], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 16:40:48 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[35m (97.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "macs" ("created_at", "index", "memory", "model", "price", "processor", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 25 Oct 2013 16:40:48 UTC +00:00], ["index", 4], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 16:40:48 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[36m (98.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "macs" ("created_at", "index", "memory", "model", "price", "processor", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 25 Oct 2013 16:40:48 UTC +00:00], ["index", 5], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 16:40:48 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[35m (98.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "macs" ("created_at", "index", "memory", "model", "price", "processor", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 25 Oct 2013 16:40:49 UTC +00:00], ["index", 6], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 16:40:49 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[36m (81.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "macs" ("created_at", "index", "memory", "model", "price", "processor", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 25 Oct 2013 16:40:49 UTC +00:00], ["index", 7], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 16:40:49 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[35m (97.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "macs" ("created_at", "index", "memory", "model", "price", "processor", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 25 Oct 2013 16:40:49 UTC +00:00], ["index", 8], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 16:40:49 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[36m (107.5ms)[0m  [1mcommit transaction[0m
+  [1m[36mMac Load (0.4ms)[0m  [1mSELECT "macs".* FROM "macs"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "macs"
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from irb_binding at (irb):5)
+  [1m[36mMac Load (0.3ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY index[0m
+SQLite3::SQLException: near "index": syntax error: SELECT "macs".* FROM "macs"   ORDER BY index
+  [1m[35mMac Load (0.2ms)[0m  SELECT "macs".* FROM "macs" ORDER BY index
+SQLite3::SQLException: near "index": syntax error: SELECT "macs".* FROM "macs"   ORDER BY index
+  [1m[36mMac Load (0.3ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY index[0m
+SQLite3::SQLException: near "index": syntax error: SELECT "macs".* FROM "macs"   ORDER BY index
+  [1m[35mMac Load (0.3ms)[0m  SELECT "macs".* FROM "macs" ORDER BY index
+SQLite3::SQLException: near "index": syntax error: SELECT "macs".* FROM "macs"   ORDER BY index
+  [1m[36mMac Load (0.3ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY "macs".index ASC[0m
+SQLite3::SQLException: near "index": syntax error: SELECT "macs".* FROM "macs"   ORDER BY "macs".index ASC
+DEPRECATION WARNING: Calling #default_scope without a block is deprecated. For example instead of `default_scope where(color: 'red')`, please use `default_scope { where(color: 'red') }`. (Alternatively you can just redefine self.default_scope.). (called from <class:Mac> at /home/luiz/Projetos/qualmaccomprar/app/models/mac.rb:2)
+  [1m[36mMac Load (0.3ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY index DESC[0m
+SQLite3::SQLException: near "index": syntax error: SELECT "macs".* FROM "macs"   ORDER BY index DESC
+  [1m[35mMac Load (0.3ms)[0m  SELECT "macs".* FROM "macs" ORDER BY storage, index DESC
+SQLite3::SQLException: near "index": syntax error: SELECT "macs".* FROM "macs"   ORDER BY storage, index DESC
+  [1m[36mMac Load (0.4ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY storage[0m
+  [1m[35mMac Load (0.4ms)[0m  SELECT "macs".* FROM "macs" ORDER BY index
+SQLite3::SQLException: near "index": syntax error: SELECT "macs".* FROM "macs"   ORDER BY index
+  [1m[36m (104.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (108.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMacs (20130926211912)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "macs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "model" varchar(255), "processor" float, "memory" integer, "storage" integer, "video" varchar(255), "price" float, "sequence" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130926211912"]]
+  [1m[36m (114.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "macs" ("created_at", "memory", "model", "price", "processor", "sequence", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 25 Oct 2013 17:02:41 UTC +00:00], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["sequence", 1], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 17:02:41 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[35m (130.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "macs" ("created_at", "memory", "model", "price", "processor", "sequence", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 25 Oct 2013 17:02:41 UTC +00:00], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["sequence", 2], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 17:02:41 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[36m (97.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "macs" ("created_at", "memory", "model", "price", "processor", "sequence", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 25 Oct 2013 17:02:41 UTC +00:00], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["sequence", 3], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 17:02:41 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[35m (97.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "macs" ("created_at", "memory", "model", "price", "processor", "sequence", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 25 Oct 2013 17:02:41 UTC +00:00], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["sequence", 4], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 17:02:41 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[36m (97.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "macs" ("created_at", "memory", "model", "price", "processor", "sequence", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 25 Oct 2013 17:02:41 UTC +00:00], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["sequence", 5], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 17:02:41 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[35m (81.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "macs" ("created_at", "memory", "model", "price", "processor", "sequence", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 25 Oct 2013 17:02:42 UTC +00:00], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["sequence", 6], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 17:02:42 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[36m (81.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "macs" ("created_at", "memory", "model", "price", "processor", "sequence", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 25 Oct 2013 17:02:42 UTC +00:00], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["sequence", 7], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 17:02:42 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[35m (89.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "macs" ("created_at", "memory", "model", "price", "processor", "sequence", "storage", "updated_at", "video") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 25 Oct 2013 17:02:42 UTC +00:00], ["memory", 8], ["model", "Mac Mini"], ["price", 1000.0], ["processor", 2.8], ["sequence", 8], ["storage", 1], ["updated_at", Fri, 25 Oct 2013 17:02:42 UTC +00:00], ["video", "Intel HD 4000"]]
+  [1m[36m (106.2ms)[0m  [1mcommit transaction[0m
+  [1m[36mMac Load (0.6ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY sequence[0m
+  [1m[35mMac Load (0.5ms)[0m  SELECT "macs".* FROM "macs" ORDER BY sequence DESC
+  [1m[36mMac Load (0.3ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY "macs"."id" ASC LIMIT 1[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:05:44 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mMac Load (0.5ms)[0m  SELECT "macs".* FROM "macs" ORDER BY sequence
+  Rendered home/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 702ms (Views: 632.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:05:45 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:05:45 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:05:45 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:05:45 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:05:45 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:05:45 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:05:45 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:07:32 -0200
+Processing by HomeController#index as HTML
+  [1m[36mMac Load (0.3ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY sequence[0m
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:07:32 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:07:32 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:07:32 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:07:32 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:07:32 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:07:32 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:07:32 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:11:25 -0200
+Processing by HomeController#index as HTML
+  [1m[35mMac Load (0.6ms)[0m  SELECT "macs".* FROM "macs" ORDER BY sequence
+  Rendered home/index.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:11:25 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:11:25 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:11:25 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:11:25 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:11:25 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:11:25 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:11:25 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:11:25 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:11:25 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:18:41 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:19:57 -0200
+Processing by HomeController#index as HTML
+  [1m[36mMac Load (0.3ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY sequence[0m
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:19:57 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:19:57 -0200
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:19:57 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:19:57 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:19:57 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:19:57 -0200
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-31 15:19:57 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:19:57 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:19:57 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:19:57 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:22:25 -0200
+Processing by HomeController#index as HTML
+  [1m[35mMac Load (0.6ms)[0m  SELECT "macs".* FROM "macs" ORDER BY sequence
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:22:25 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:22:25 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:22:25 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:22:25 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:22:25 -0200
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:22:25 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:22:25 -0200
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-31 15:22:25 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:22:25 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:22:25 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:25:38 -0200
+Processing by HomeController#index as HTML
+  [1m[36mMac Load (0.3ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY sequence[0m
+  Rendered home/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:25:38 -0200
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:25:38 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:25:38 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:25:38 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:25:38 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:25:38 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:25:38 -0200
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-31 15:25:38 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:25:38 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:25:38 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:29:53 -0200
+Processing by HomeController#index as HTML
+  [1m[35mMac Load (0.5ms)[0m  SELECT "macs".* FROM "macs" ORDER BY sequence
+  Rendered home/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:29:53 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:29:53 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:29:53 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:29:53 -0200
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:29:53 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:29:53 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:29:53 -0200
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-31 15:29:53 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:29:53 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:29:53 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:37:34 -0200
+Processing by HomeController#index as HTML
+  [1m[36mMac Load (0.5ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY sequence[0m
+  Rendered home/index.html.erb within layouts/application (65.8ms)
+Completed 200 OK in 78ms (Views: 75.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:37:35 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:37:35 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:37:35 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:37:35 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:37:35 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:37:35 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:37:35 -0200
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-31 15:37:35 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:37:35 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:37:35 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:38:04 -0200
+Processing by HomeController#index as HTML
+  [1m[35mMac Load (0.5ms)[0m  SELECT "macs".* FROM "macs" ORDER BY sequence
+  Rendered home/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:38:04 -0200
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:38:04 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:38:04 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:38:04 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:38:04 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:38:04 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:38:04 -0200
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-31 15:38:04 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:38:04 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:38:04 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:39:49 -0200
+Processing by HomeController#index as HTML
+  [1m[36mMac Load (0.3ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY sequence[0m
+  Rendered home/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:39:49 -0200
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:39:49 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:39:49 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:39:49 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:39:49 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:39:49 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:39:49 -0200
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-31 15:39:49 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:39:49 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:39:49 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:40:28 -0200
+Processing by HomeController#index as HTML
+  [1m[35mMac Load (0.5ms)[0m  SELECT "macs".* FROM "macs" ORDER BY sequence
+  Rendered home/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:40:28 -0200
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:40:28 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:40:28 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:40:28 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:40:28 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:40:28 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:40:28 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:40:28 -0200
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-31 15:40:28 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:40:28 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:41:46 -0200
+Processing by HomeController#index as HTML
+  [1m[36mMac Load (0.5ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY sequence[0m
+  Rendered home/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:41:46 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:41:46 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:41:46 -0200
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:41:46 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:41:46 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:41:46 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:41:46 -0200
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-31 15:41:46 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:41:46 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:41:46 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:45:16 -0200
+Processing by HomeController#index as HTML
+  [1m[35mMac Load (0.2ms)[0m  SELECT "macs".* FROM "macs" ORDER BY sequence
+  Rendered home/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:45:16 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:45:16 -0200
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:45:16 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:45:16 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:45:16 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:45:16 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:45:16 -0200
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-31 15:45:16 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:45:16 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:45:16 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:47:45 -0200
+Processing by HomeController#index as HTML
+  [1m[36mMac Load (0.2ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY sequence[0m
+  Rendered home/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:47:45 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:47:45 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:47:45 -0200
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:47:45 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:47:45 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:47:45 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:47:45 -0200
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-31 15:47:45 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:47:45 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:47:45 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:47:53 -0200
+Processing by HomeController#index as HTML
+  [1m[35mMac Load (0.5ms)[0m  SELECT "macs".* FROM "macs" ORDER BY sequence
+  Rendered home/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:47:53 -0200
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:47:53 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:47:53 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:47:53 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:47:53 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:47:53 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:47:53 -0200
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-31 15:47:53 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:47:53 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:47:53 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:50:41 -0200
+Processing by HomeController#index as HTML
+  [1m[36mMac Load (0.5ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY sequence[0m
+  Rendered home/index.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::TB):
+    29: 		<td><%= mac.model %></td>
+    30: 		<td><%= mac.processor %> Ghz</td>
+    31: 		<td><%= mac.memory %> GB</td>
+    32: 		<td><%= mac.storage %> <%= mac.storage>10 ? GB : TB %></td>
+    33: 		<td><%= mac.video %></td>
+    34: 		<td><%= number_to_currency(mac.price, unit: "R$", separator: ",", delimiter: ".") %></td>
+    35: 		<td><%= number_to_currency(mac.price) %></td>
+  app/views/home/index.html.erb:32:in `block in _app_views_home_index_html_erb__3932000268954096894_70365121197640'
+  app/views/home/index.html.erb:27:in `_app_views_home_index_html_erb__3932000268954096894_70365121197640'
+
+
+  Rendered /home/luiz/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/luiz/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/luiz/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:51:02 -0200
+Processing by HomeController#index as HTML
+  [1m[35mMac Load (0.6ms)[0m  SELECT "macs".* FROM "macs" ORDER BY sequence
+  Rendered home/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:51:03 -0200
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:51:03 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:51:03 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:51:03 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:03 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:03 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:03 -0200
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:03 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:03 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:03 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:51:19 -0200
+Processing by HomeController#index as HTML
+  [1m[36mMac Load (0.6ms)[0m  [1mSELECT "macs".* FROM "macs" ORDER BY sequence[0m
+  Rendered home/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:51:19 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:51:19 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:19 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:51:19 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:19 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:51:19 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:19 -0200
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:19 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:19 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:19 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 15:51:57 -0200
+Processing by HomeController#index as HTML
+  [1m[35mMac Load (0.5ms)[0m  SELECT "macs".* FROM "macs" ORDER BY sequence
+  Rendered home/index.html.erb within layouts/application (33.7ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 15:51:57 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:51:57 -0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-10-31 15:51:57 -0200
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-10-31 15:51:57 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:57 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:57 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:57 -0200
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:57 -0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:57 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 15:51:57 -0200

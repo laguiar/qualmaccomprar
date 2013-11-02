@@ -1,0 +1,83 @@
+<div class="container">
+    <h3>Qual Mac Comprar?</h3>
+    <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="150"></div>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://qualmaccomprar.com" data-text="Qual Mac Comprar?" data-lang="pt">Tweet</a>
+    <br/><br/>
+		
+    <p>Comprar um novo computador Apple não é uma tarefa muito fácil, são muitas configurações possíveis.</p>
+    <p>Esse <em>comparativo</em> tenta facilitar essa escolha, partindo da melhor relação <strong>Performance x Preço</strong>, em cada linha de Mac disponível.</p>
+    <p><strong>Todos</strong> modelos tiveram a escolha dos itens <em>(processador/mem/disco)</em> visando <strong>aumentar a performance</strong>, os preços são maiores que dos modelos "básicos".</p>
+    <br/>
+
+    <h4>Computadores</h4>
+    <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered table-condensed" id="pricetable">
+	<thead>
+	    <tr>
+		<th>Modelo</th>
+		<th>Processador (i7)</th>
+		<th>Memória</th>
+		<th>Disco (SSD)</th>
+		<th>Video</th>
+		<th>Apple BR</th>
+		<th>Apple US</th>
+		<th>Taxa de Importação</th>
+	    </tr>
+	</thead>
+	<tbody>
+	    <% @macs.each do |mac| %>
+	    <tr>
+		<td><%= mac.model %></td>
+		<td><%= mac.processor %> Ghz</td>
+		<td><%= mac.memory %> GB</td>
+		<td><%= mac.storage %> <%= mac.storage > 10 ? 'GB' : 'TB Fusion' %></td>
+		<td><%= mac.video %></td>
+		<td><%= number_to_currency(mac.price_br, unit: "R$", separator: ",", delimiter: ".") %></td>
+		<td><%= number_to_currency(mac.price_us) %></td>
+		<td><%= number_to_currency((mac.price - 500) / 2) %></td>
+	    </tr>
+	    <% end %>
+	</tbody>
+    </table>
+
+    <p>
+	<small>* Paga-se imposto no ato da compra, sobre o valor do produto, e o imposto varia entre os estados, geralmente entre 5% e 7%.</small>
+    </p>
+    <p>
+	<small>* Paga-se imposto sobre 50% do valor excedido da taxa de $500: (Valor do produto - 500) / 2.</small>
+    </p>
+    <p>
+	<small>* Existem outras configurações para cada modelo, diminuindo ou aumentando o preço final.</small>
+    </p>
+    <br/>
+
+    <h4>Acessórios</h4>
+    <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered table-condensed" id="acessorios">
+	<tbody>
+	    <tr>
+		<td>Thunderbolt Display 27"</td>
+		<td>3,599.00</td>
+		<td>999.00</td>
+	    </tr>
+	    <tr>
+		<td>Magic Trackpad</td>
+		<td>269.00</td>
+		<td>69.00</td>
+	    </tr>
+	    <tr>
+		<td>Magic Mouse</td>
+		<td>229.00</td>
+		<td>69.00</td>
+	    </tr>
+	    <tr>
+		<td>Keyboard Wireless</td>
+		<td>229.00</td>
+		<td>69.00</td>
+	    </tr>
+	</tbody>
+    </table>
+		
+    <p>Qualquer erro encontrado, sugestões, entrem em contato: <a href="http://twitter.com/laguiar" target="_blank">@laguiar</a>
+    <br/>
+    <p class="muted"><small>* Mac Mini, MacBook, iMac and Mac Pro are trademarks of Apple Inc., registered in the U.S. and other countries.</small></p>
+    
+</div>
