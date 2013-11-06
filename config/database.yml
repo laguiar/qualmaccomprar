@@ -55,5 +55,4 @@ production:
   encoding: unicode
   database: qualmaccomprar
   pool: 5
-  username: qmc
-  password: apple
+  password:
