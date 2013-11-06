@@ -33,7 +33,7 @@
 		<td><%= mac.video %></td>
 		<td><%= number_to_currency(mac.price_br, unit: "R$", separator: ",", delimiter: ".") %></td>
 		<td><%= number_to_currency(mac.price_us) %></td>
-		<td><%= number_to_currency((mac.price - 500) / 2) %></td>
+		<td><%= number_to_currency((mac.price_us - 500) / 2) %></td>
 	    </tr>
 	    <% end %>
 	</tbody>
